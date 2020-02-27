@@ -71,7 +71,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'bootstrap_datepicker_plus'
+    'bootstrap_datepicker_plus',
+    'django.contrib.humanize'
 ]
 
 MIDDLEWARE = [
@@ -160,8 +161,11 @@ LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'Africa/Nairobi'
 
 USE_I18N = True
-
 USE_L10N = True
+USE_DECIMAL_SEPARATOR = True
+DECIMAL_SEPARATOR = ","
+USE_THOUSAND_SEPARATOR = True
+THOUSAND_SEPARATOR = "."
 
 USE_TZ = True
 

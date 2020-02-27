@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
 {% load staticfiles %}
-
+{% load humanize %}
+{% load i18n %}
+{% load l10n %}
 
 {% block content %}
 <div class="container" style="margin-top:15px;">
@@ -37,7 +39,7 @@
                 <!-- <td>{{defaulter.username}}</td> -->
                 <td>{{defaulter.from_date|date:"M d, Y"}}</td>
                 <td>{{defaulter.to_date|date:"M d, Y"}}</td>
-                <td>{{defaulter.amount}}</td>
+                <td>{{defaulter.amount|floatformat:2|intcomma}}</td>
 
             </tr>
 
