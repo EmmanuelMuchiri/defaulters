@@ -3,13 +3,100 @@
 {% load staticfiles %}
 
 {% block content %}
-<!-- <div class="container"> -->
-    <div class="row">
-        <img alt="IG"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTJXpbFD68WVyP60MbFrzMraBSrhwhQrNU6GaUYWdWafEct5ZUW"
-             class="img-responsive" style="width:100%">
-    </div>
+
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    header img {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        filter: brightness(.4);
+        background-attachment: fixed;
+    }
+
+
+    section {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-family: 'Poppins';
+    }
+
+    p {
+        font-family: 'Poppins';
+        color: gray;
+        text-align: center;
+
+    }
+</style>
+<div class="homepage">
+
+    <body>
+
+
+
+        <header>
+
+            </section>
+            <img src="https://images.pexels.com/photos/3639507/pexels-photo-3639507.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="Five developers at work.">
+            <section>
+                <h1 class="animated fadeInUp delay-1s" style="font-size: 30px;">Welcome to</h1>
+                <h2 class="animated fadeInUp delay-2s" style="font-size: 80px; font-weight: 900;"> Defaulters Reference Bureau</h2>
+
+                <a href="#about"> <i class="fas fa-arrow-circle-down animated fadeInUp delay-3s"
+                        style="font-size: 3rem; padding-top:200px;padding-left: 170px;"></i></a>
+
+            </section>
+
+        </header>
+        <br>
+        <br>
+        <div class="container">
+            <div class="about" id="about">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <h3 style="text-align: center; font-size: 50px; font-weight: 400; font-family:'Poppins'  ">
+                            About
+                        </h3>
+                        <p>Defaulters Reference Bureau (DRB) is a platform that links Real Estate Agents to help them manage their properties in an efficient manner.</p>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                
+                    </div>
+                    <div class="col-md-4">
+                        <h4 style="text-align: center; font-size: 50px; font-weight: 400; font-family:'Poppins'"> What
+                            we do
+                        </h4>
+                        <p>
+                            We provide information about Rent defaulters to real estate agents/managers that are already subscribed to this platform.This helps to make them informed choices upon admitting a new tenant into their premises.
+
+                        </p>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</div>
+
+
 <!-- </div> -->
+
+
 
 
 {% endblock %}
